@@ -20,7 +20,7 @@
             "dry_run": false,
             "filename_regex": ".*.tif$",
             "id_template": "{}",
-            "prefix": "cyclone/CYGNSS/"
+            "prefix": "cyclone/cygnss_l3/output/"
         }
     ],
     "is_periodic": true,
@@ -58,6 +58,7 @@
             "type": "application/json"
         }
     ],
+    "product_level": "L2",
     "providers": [
         {
             "name": "NASA/NOAA",
@@ -81,7 +82,7 @@
             "assets": [
                 "cog_default"
             ],
-            "colormap_name": "magma",
+            "colormap_name": "viridis",
             "rescale": [
                 [
                     0,
@@ -103,17 +104,16 @@
     "stac_version": "1.0.0",
     "summaries": {
         "datetime": [
-            "2024-06-26T00:00:00Z",
-            "2024-07-11T00:00:00Z"
+            "2024-06-26T00:30:00Z",
+            "2024-07-11T23:30:00Z"
         ]
     },
     "temporal_extent": {
-        "enddate": "2024-06-26T00:00:00Z",
-        "startdate": "2024-07-11T00:00:00Z"
+        "enddate": "2024-06-26T00:30:00Z",
+        "startdate": "2024-07-11T23:30:00Z"
     },
-    "time_density": "day",
-    "product_level" :"L2",
     "temporal_frequency": "twenty four hours",
+    "time_density": "hour",
     "title": "CYGNSS Wind Speed (knots)",
     "type": "Collection"
 }
